@@ -86,3 +86,4 @@ function createPet(age, kind, name) {
 }
 
 // TODO:// better error messages
+export {readPets, createPet, updatePet};
