@@ -49,8 +49,9 @@ let server = http.createServer((req, res) => {
         res.setHeader("Content-Type", "application/json");
         res.end(JSON.stringify(pets[petIndex]));
       } else {
+        res.setHeader("Content-Type", "text/plain")
         res.statusCode = 404;
-        res.end("Index invalid.");
+        res.end("Not Found");
       }
     });
 
