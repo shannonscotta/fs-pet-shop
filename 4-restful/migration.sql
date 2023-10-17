@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS pets;
+
+CREATE TABLE pets (
+    id SERIAL,
+    age INTEGER NOT NULL,
+    name TEXT NOT NULL,
+    kind TEXT NOT NULL
+);
